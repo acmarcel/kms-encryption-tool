@@ -1,0 +1,23 @@
+{
+  "name": "kms-encryption-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ac-marcel/kms-encryption-tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/ac-marcel/kms-encryption-tool/issues"
+  },
+  "homepage": "https://gitlab.com/ac-marcel/kms-encryption-tool#README",
+  "dependencies": {
+    "electron": "^1.6.6"
+  }
+}
