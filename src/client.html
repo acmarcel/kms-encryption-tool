@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+  <div class="container">
+    <label for="accessKeyId">Acces Key Id</label>
+    <input type="text" id="accessKeyId" class="input">
+    <label for="secretAccessKey">Secret Acces Key</label>
+    <input type="text" id="secretAccessKey" class="input">
+    <label for="region">Region</label>
+    <input type="text" id="region" class="input">
+    <button id="config">Configurar</button>
+    <label for="key">Llave</label>
+    <input type="text" id="key" class="input">
+    <label for="text">Texto</label>
+    <input type="text" id="text" class="input">
+    <button id="encrypt">Encriptar</button>
+    <button id="decrypt">Desencriptar</button>
+    <div id="result"></div>
+  </div>
+  <script type="text/javascript">
+    require('./client')
+  </script>
+</body>
+
+</html>

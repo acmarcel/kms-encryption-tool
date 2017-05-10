@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input {
+  flex: 1;
+  height: 36px;
+  border: 1px solid #ababab;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 20px;
+  padding: 0 10px;
+}
