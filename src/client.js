@@ -18,7 +18,7 @@ document.getElementById('encrypt').addEventListener('click', () => {
 		let result
 		if (err) result = err
 		else result = data.CiphertextBlob.toString('base64')
-		document.getElementById('result').innerHTML = result
+		document.getElementById('result').value = result
 	})
 })
 
@@ -28,6 +28,6 @@ document.getElementById('decrypt').addEventListener('click', () => {
 		let result
 		if (err) result = err
 		else result = data.Plaintext
-		document.getElementById('result').innerHTML = result
+		document.getElementById('result').value = result
 	})
 })
