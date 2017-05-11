@@ -2,26 +2,58 @@
 
 <head>
   <link rel="stylesheet" href="client.css">
+  <link rel="stylesheet" href="material.min.css">
 </head>
 
 <body>
-  <div class="container">
-    <label for="accessKeyId">Acces Key Id</label>
-    <input type="text" id="accessKeyId" class="input">
-    <label for="secretAccessKey">Secret Acces Key</label>
-    <input type="text" id="secretAccessKey" class="input">
-    <label for="region">Region</label>
-    <input type="text" id="region" class="input">
-    <button id="config">Configurar</button>
-    <label for="key">Llave</label>
-    <input type="text" id="key" class="input">
-    <label for="text">Texto</label>
-    <input type="text" id="text" class="input">
-    <button id="encrypt">Encriptar</button>
-    <button id="decrypt">Desencriptar</button>
-    <label for="result">Resultado</label>
-    <textarea id="result" name="name" rows="8" cols="80"></textarea>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header" style="-webkit-app-region: drag">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">KMS Encryption Tool</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content" id="configPanel">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input type="text" id="accessKeyId"  class="mdl-textfield__input">
+          <label for="accessKeyId" class="mdl-textfield__label">Acces Key Id</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input type="text" id="secretAccessKey"  class="mdl-textfield__input">
+          <label for="secretAccessKey" class="mdl-textfield__label">Secret Acces Key</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input type="text" id="region"  class="mdl-textfield__input">
+          <label for="region" class="mdl-textfield__label">Region</label>
+        </div>
+        <div>
+          <button id="save" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Guardar</button>
+        </div>
+      </div>
+      <div id="encryptPanel" class="page-content">
+        <div><button id="config" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Configurar</button></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input type="text" id="key" class="mdl-textfield__input">
+          <label for="key" class="mdl-textfield__label">Llave</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input type="text" id="text" class="mdl-textfield__input">
+          <label for="text" class="mdl-textfield__label">Texto</label>
+        </div>
+        <div>
+          <button id="encrypt" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Encriptar</button>
+          <button id="decrypt" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Desencriptar</button>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <textarea id="result" name="name" rows="8" cols="80" class="mdl-textfield__input"></textarea>
+          <label for="result" class="mdl-textfield__label">Resultado</label>
+        </div>
+      </div>
+      <button id="exit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="width:100px; margin: 0 20px">Salir</button>
+    </main>
   </div>
+
+  <script src="./material.min.js"></script>
   <script type="text/javascript">
     require('./client')
   </script>

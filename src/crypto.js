@@ -1,4 +1,4 @@
-const AWS = require('aws-sdk/dist/aws-sdk-react-native')
+const AWS = require('aws-sdk')
 let kms
 
 exports.configure = (params) => {
